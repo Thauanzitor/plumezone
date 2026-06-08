@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Cadastrar Produto</title>
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="estolor.css">
 </head>
+
 <body>
-  <img src="imagem.jpg" alt="">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <p class ="plume">PLUME</p>
+<div class ="pluma"></div>
 <div class="card">
-<h1>+ Cadastrar Produto</h1>
+<h1>Cadastrar Produto</h1>
 <form action="salvar.php" method="POST">
   <label>Nome:</label>
   <input type="text" name="nome" required>
@@ -16,9 +19,12 @@
   <input type="number" step="0.01" name="preco" required>
   <label>Estoque:</label>
   <input type="number" name="estoque" required>
-  <button type="submit" class="btn-primary">Salvar Produto</button>
+  <div class="botoes">
+    <button type="submit" class="btn-primary">Salvar Produto</button>
+    <a href="listar.php" class="btn-primary">Ver Produtos</a>
+  </div>
 </form>
-<a href="listar.php" class="btn-primary">Ver Produtos</a>
-</div>
+
+
 </body>
 </html>
