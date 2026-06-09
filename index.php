@@ -2,29 +2,20 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Cadastrar Produto</title>
+<title>PlumeZone - Painel Geral</title>
 <link rel="stylesheet" href="estolor.css">
 </head>
-
 <body>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <p class ="plume">PLUME</p>
-<div class ="pluma"></div>
-<div class="card">
-<h1>Cadastrar Produto</h1>
-<form action="salvar.php" method="POST">
-  <label>Nome:</label>
-  <input type="text" name="nome" required>
-  <label>Preço:</label>
-  <input type="number" step="0.01" name="preco" required>
-  <label>Estoque:</label>
-  <input type="number" name="estoque" required>
-  <div class="botoes">
-    <button type="submit" class="btn-primary">Salvar Produto</button>
-    <a href="listar.php" class="btn-primary">Ver Produtos</a>
-  </div>
-</form>
-
-
+  <h1>Sistema Plume - Painel de Controle</h1>
+  <h2>Escolha uma seção para gerenciar:</h2>
+  <ul>
+    <li><a href="index_produtos.php" class="btn-primary">Produtos</a></li>
+    <li><a href="index_clientes.php" class="btn-primary">Clientes</a></li>
+    <li><a href="index_pedidos.php" class="btn-primary">Pedidos</a></li>
+    <li><a href="index_itens.php" class="btn-primary">Itens de Pedido</a></li>
+  </ul>
+</div>
 </body>
 </html>

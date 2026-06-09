@@ -13,12 +13,12 @@ if (!$produto) { header("Location: listar.php"); exit; }
 <head>
 <meta charset="UTF-8">
 <title>Editar Produto</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="estolor.css">
 </head>
 <body>
 <div class="card">
 <h1># Editar Produto</h1>
-<form action="atualizar.php" method="POST">
+<form action="atualizar_produtos.php" method="POST">
   <input type="hidden" name="id" value="<?= $produto['id_produto'] ?>">
   <label>Nome:</label>
   <input type="text" name="nome" value="<?= htmlspecialchars($produto['nome']) ?>" required>
@@ -28,7 +28,7 @@ if (!$produto) { header("Location: listar.php"); exit; }
   <input type="number" name="estoque" value="<?= htmlspecialchars($produto['estoque']) ?>" required>
   <button type="submit" class="btn-primary">Salvar Alterações</button>
 </form>
-<a href="listar.php" class="btn-primary">Voltar</a>
+<a href="listar_produtos.php" class="btn-primary">Voltar</a>
 </div>
 </body>
 </html>

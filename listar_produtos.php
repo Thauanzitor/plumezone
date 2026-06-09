@@ -11,12 +11,12 @@ $total = count($produtos);
 <head>
 <meta charset="UTF-8">
 <title>Lista de Produtos</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="estolor.css">
 </head>
 <body>
 <div class="card">
 <h1>= Produtos Cadastrados (<?= $total ?>)</h1>
-<a href="index.php" class="btn-primary">+ Novo Produto</a>
+<a href="index_produtos.php" class="btn-primary">+ Novo Produto</a>
 <table>
 <tr><th>ID</th><th>Nome</th><th>Preço</th><th>Estoque</th><th>Ações</th></tr>
 <?php foreach ($produtos as $p): ?>
@@ -26,8 +26,8 @@ $total = count($produtos);
   <td><?= htmlspecialchars($p['preco']) ?></td>
   <td><?= htmlspecialchars($p['estoque']) ?></td>
   <td>
-    <a href="editar.php?id=<?= $p['id_produto'] ?>" class="btn-edit">Editar</a>
-    <a href="deletar.php?id=<?= $p['id_produto'] ?>" class="btn-del" onclick="return confirm('Excluir este produto?')">Excluir</a>
+    <a href="editar_produtos.php?id=<?= $p['id_produto'] ?>" class="btn-edit">Editar</a>
+    <a href="deletar_produtos.php?id=<?= $p['id_produto'] ?>" class="btn-del" onclick="return confirm('Excluir este produto?')">Excluir</a>
   </td>
 </tr>
 <?php endforeach; ?>

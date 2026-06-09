@@ -12,10 +12,12 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.pluma{
- position: relative;
-  top: -30px /* desloca 30px para cima */;
+.plume:hover{
+  color: #ff00cc;
+
 }
+
+
 
 .card {
   background: rgba(255, 255, 255, 0.05);
@@ -33,6 +35,19 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2{
+  text-align: center;
+}
+
+ul{
+  display: flex;            /* coloca os itens lado a lado */
+  gap: 20px;                /* espaço entre os botões */
+  list-style: none;          /* remove bolinhas da lista */
+  padding: 0;
+  margin: 0;
+  justify-content: center;   /* centraliza os botões */
+}
+
 label {
   display: block;
   margin: 10px 0 5px;
@@ -41,11 +56,12 @@ label {
 input {
   width: 100%;
   padding: 10px;
-  border: 2px solid #050505;
+  border: 2px solid #ff00cc;
   border-radius: 8px;
-  background: #ffffff;
-  color: #fff;
+  background: #ffffff;   /* fundo escuro */
+  color: #000000;        /* texto branco */
 }
+
 input:focus {
   border-color: #ff00cc;
   box-shadow: 0 0 10px #ff00cc;
@@ -64,7 +80,7 @@ input:focus {
 }
 
 .btn-primary:hover {
-  background: #1e00ff;
+  background: #ff00cc;
   color: #fff;
 }
 
@@ -110,4 +126,4 @@ td {
 }
 tr:hover {
   background: rgba(255, 0, 204, 0.2);
-};
+}
